@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASD Fitness club</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    body {
+        font-family: 'Festive', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px 0px;
+        background: url('data:image/jpeg;base64,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') center center no-repeat ;
+        /* background: black; */
+        background-size: 1516px 1000px;
+    }
+
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+
+    }
+
+    .navbar {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .navbar li {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+        padding: 6px 35px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+        font-size: 26px;
+    }
+
+    .navbar li a {
+        color: honeydew;
+        padding: 34px 18px;
+        text-decoration: none;
+    }
+
+    .navbar li a.active:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        padding: 6px 17px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid yellow;
+        margin: 126px 33px;
+        padding: 41px 20px;
+        width: 33%;
+        border-radius: 45px;
+
+    }
+
+    .form-group {
+        display: block;
+        margin: auto;
+        padding: 4px 4px;
+        border-radius: 4px;
+        width: 300px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    input {
+        border-radius: 13px;
+        margin: auto;
+        padding: 2px 5px;
+        text-align: center;
+        width: 340px;
+    }
+
+    .container button {
+        text-align: center;
+        display: block;
+        width: 23%;
+        margin: 9px 275px;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- Left for box logo -->
+        <div class="left">
+            <img src="https://previews.123rf.com/images/lumut/lumut1808/lumut180801060/106821092-.jpg" alt="">
+            <div>
+                My Fitness
+            </div>
+        </div>
+
+        <!-- middle for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Fitness Calc</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">CallUs</button>
+            <button class="btn">EmailUs</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Sangamner now</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Locality">
+        </div>
+        <button class="btn">submit</button>
+    </div>
+</body>
+
+</html>
